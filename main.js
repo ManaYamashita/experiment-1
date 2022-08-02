@@ -27,7 +27,7 @@ timeline.push(welcome);
 
 /* define instructions trial */
 var instructions = {
-    type: html-jsPsychHtmlKeyboardResponse,
+    type: jsPsychHtmlKeyboardResponse,
       stimulus: `
         <p>画面の中央に丸が表示されます</p>"
         <p>もし丸が <strong>青なら</strong>、キーボードの F キーを押してください</p>
