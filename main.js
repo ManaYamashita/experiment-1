@@ -6,12 +6,6 @@ var repo_site = "https://manayamashita.github.io/experiment-1/";
 
 /* create timeline */
 var timeline = [];
-/* preload images */
-var preload = {
-  type: jsPsychPreload,
-  images: [repo_site +'img/blue.png', repo_site +'img/orange.png']
-};
-timeline.push(preload);
 
 /* define welcome message trial */
 var welcome = {
