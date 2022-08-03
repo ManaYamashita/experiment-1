@@ -9,14 +9,14 @@ var timeline = [];
 
 /* define welcome message trial */
 var welcome = {
-  type: jsPsychHtmlKeyboardResponse,
+  type: "html-keyboard-response",
   stimulus: "何かキーを押すと実験が始まります"
 };
 timeline.push(welcome);
 
 /* define instructions trial */
 var instructions = {
-    type: jsPsychHtmlKeyboardResponse,
+    type: "html-keyboard-response",
       stimulus: `
         <p>画面の中央に丸が表示されます</p>"
         <p>もし丸が <strong>青なら</strong>、キーボードの F キーを押してください</p>
@@ -45,7 +45,7 @@ var test_stimuli = [
 
 /* define fixation and test trials */
 var fixation = {
-  type: jsPsychHtmlKeyboardResponse,
+  type: "html-keyboard-response",
   stimulus: '<div style="font-size:60px;">+</div>',
   choices: "NO_KEYS",
   trial_duration: function(){
@@ -57,7 +57,7 @@ var fixation = {
 };
 
 var test = {
-  type: jsPsychImageKeyboardResponse,
+  type: "image-keyboard-response",
   stimulus: jsPsych.timelineVariable('stimulus'),
   choices: ['f', 'j'],
   data: {
@@ -80,7 +80,7 @@ timeline.push(test_procedure);
 
 /* define debrief */
 var debrief_block = {
-  type: jsPsychHtmlKeyboardResponse,
+  type:  "html-keyboard-response",
   stimulus: function() {
 
     var trials = jsPsych.data.get().filter({task: 'response'});
