@@ -1,11 +1,7 @@
 var repo_site = "https://manayamashita.github.io/experiment-1/";
     
 /* initialize jsPsych */
-    var jsPsych = initJsPsych({
-        on_finish: function() {
-          jsPsych.data.displayData();
-        }
-      });
+   
 
 
 /* create timeline */
