@@ -10,7 +10,6 @@ var repo_site = "https://manayamashita.github.io/experiment-1/";
 
 /* create timeline */
 var timeline = [];
-
 /* preload images */
 var preload = {
   type: jsPsychPreload,
@@ -108,4 +107,4 @@ var debrief_block = {
 timeline.push(debrief_block);
 
     /* start the experiment */
-    jsPsych.run(timeline);
+    /*jsPsych.run(timeline);*/
