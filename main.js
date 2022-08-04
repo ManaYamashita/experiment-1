@@ -1,9 +1,5 @@
 var repo_site = "https://manayamashita.github.io/experiment-1/";
     
-/* initialize jsPsych */
-   
-
-
 /* create timeline */
 var timeline = [];
 
