@@ -3,14 +3,6 @@ var repo_site = "https://manayamashita.github.io/SPT_ex1_try/";
 /*実験はじめ*/
 var timeline = [];
 
-jsPsych.init({
-      timeline: timeline,
-      on_finish: function() {
-        jsPsych.data.displayData();
-        }
-    });
-
-
 var welcome = {
         type : "html-keyboard-response",
         stimulus : "何かキーを押すと実験が始まります",
