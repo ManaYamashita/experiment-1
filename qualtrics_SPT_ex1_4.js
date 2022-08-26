@@ -6,12 +6,11 @@
         var qthis = this;
     qthis.hideNextButton();
 
-        var task_github = "https://manayamashita.github.io/SPT_ex1_4/"; 
+        var task_github = "https://manayamashita.github.io/experiment-1/"; 
         // https://<GitHubのユーザー名>.github.io/<レポジトリ名>/
     
         var requiredResources = [
 
-            task_github + "UTF-8",
             task_github + "jsp/jspsych.js",
             task_github + "jsp/jspsych-html-keyboard-response.js",
             task_github + "jsp/jspsych-image-keyboard-response.js",
