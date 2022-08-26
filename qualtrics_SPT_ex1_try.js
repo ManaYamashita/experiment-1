@@ -15,7 +15,7 @@
             task_github + "jsp/jspsych.js",
             task_github + "jsp/jspsych-html-keyboard-response.js",
             task_github + "jsp/jspsych-image-keyboard-response.js",
-            task_github + "SPT_ex1_try"
+            task_github + "SPT_ex1_try.js"
           
         ];
              
