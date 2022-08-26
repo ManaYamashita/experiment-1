@@ -81,28 +81,7 @@ mesc1 = Date.now();
          choice: ['f' , 'j'],              
 
 /*記録*/         
-         on_finish: (data) => {
-
-data.flowerken = jsPsych.timelineVariable('cue');
-
-if (data.target_stimu.includes('fk')) {
-      if (jsPsych.timelineVariable('cue') == 'flower')
-       {
-          data.correctKey = 'f';
-      } else {
-          data.correctKey = 'j';
-      }
-      if (jsPsych.pluginAPI.compareKeys(data.response, data.correctKey)) {
-      data.isCorrect = 1;
-  } else {
-      data.isCorrect = 0;
-  }
-}
-
-data.target = jsPsych.timelineVariable('target1');
-
-data.rt = msec2-msec1;
-},
+         
         }
 
         mesc2 = Date.now();
