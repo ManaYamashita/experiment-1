@@ -1,4 +1,4 @@
-var repo_site = "https://manayamashita.github.io/SPT_ex1_try/";
+var repo_site = "https://manayamashita.github.io/experiment-1/";
  
 /*実験はじめ*/
 var timeline = [];
