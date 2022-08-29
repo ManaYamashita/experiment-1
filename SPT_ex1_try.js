@@ -3,6 +3,33 @@ var repo_site = "https://manayamashita.github.io/experiment-1/";
 /*実験はじめ*/
 var timeline = [];
 
+/*画像読み込み*/
+var preload = {
+  type: 'preload',
+  images: [repo_site + 'SPT_exp1_image/flower.png',
+           repo_site +'SPT_exp1_image/ken.png',
+           repo_site +'SPT_exp1_image/kf0.png',
+           repo_site +'SPT_exp1_image/kf40.png',
+           repo_site +'SPT_exp1_image/kf80.png',
+           repo_site +'SPT_exp1_image/kf120.png',
+           repo_site +'SPT_exp1_image/kf160.png',
+           repo_site +'SPT_exp1_image/Rkf40.png',
+           repo_site +'SPT_exp1_image/Rkff80.png',
+           repo_site +'SPT_exp1_image/Rkf120.png',
+           repo_site +'SPT_exp1_image/Rkf160.png',
+           repo_site +'SPT_exp1_image/fk0.png',
+           repo_site +'SPT_exp1_image/fk40.png',
+           repo_site +'SPT_exp1_image/fk80.png',
+           repo_site +'SPT_exp1_image/fk120.png',
+           repo_site +'SPT_exp1_image/fk160.png',
+           repo_site +'SPT_exp1_image/Rfk40.png',
+           repo_site +'SPT_exp1_image/Rfk80.png',
+           repo_site +'SPT_exp1_image/Rfk120.png',
+           repo_site +'SPT_exp1_image/Rfk160.png'
+          ]
+}
+/*画像読み込み終わり*/
+
 var welcome = {
         type : "html-keyboard-response",
         stimulus : "何かキーを押すと実験が始まります",
