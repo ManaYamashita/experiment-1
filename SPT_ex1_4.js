@@ -1,14 +1,14 @@
 var repo_site = "https://manayamashita.github.io/experiment-1/";
  
 /*実験はじめ*/
-var timeline1 = [];
+var timeline = [];
 
 var welcome = {
         type : "html-keyboard-response",
         stimulus : "何かキーを押すと実験が始まります",
         };
  
-        timeline1.push(welcome);
+        timeline.push(welcome);
 
  /*教示はじめ*/
 var instructions = {
@@ -16,7 +16,7 @@ var instructions = {
       stimulus: "<p>教示</p>" 
                  };
 
-        timeline1.push(instructions);
+        timeline.push(instructions);
     
 /*教示おわり*/
 
@@ -86,12 +86,12 @@ data.rt = msec2-msec1;
 
 
   var purosdure={
-    timeline1:[ready, br, test, br, test1],
-    timeline1_variables: combi_stimulus,
+    timeline:[ready, br, test, br, test1],
+    timeline_variables: combi_stimulus,
     randomize_order: true,
     repetitions: 1,
 }
 
-timeline1.push(purosdure);
+timeline.push(purosdure);
 
 /*試行終了*/
