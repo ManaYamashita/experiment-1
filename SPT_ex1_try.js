@@ -7,26 +7,26 @@ var timeline = [];
 var preload = {
   type: 'preload',
   images: [repo_site + 'SPT_exp1_image/flower.png',
-           repo_site +'SPT_exp1_image/ken.png',
-           repo_site +'SPT_exp1_image/kf0.png',
-           repo_site +'SPT_exp1_image/kf40.png',
-           repo_site +'SPT_exp1_image/kf80.png',
-           repo_site +'SPT_exp1_image/kf120.png',
-           repo_site +'SPT_exp1_image/kf160.png',
-           repo_site +'SPT_exp1_image/Rkf40.png',
-           repo_site +'SPT_exp1_image/Rkff80.png',
-           repo_site +'SPT_exp1_image/Rkf120.png',
-           repo_site +'SPT_exp1_image/Rkf160.png',
-           repo_site +'SPT_exp1_image/fk0.png',
-           repo_site +'SPT_exp1_image/fk40.png',
-           repo_site +'SPT_exp1_image/fk80.png',
-           repo_site +'SPT_exp1_image/fk120.png',
-           repo_site +'SPT_exp1_image/fk160.png',
-           repo_site +'SPT_exp1_image/Rfk40.png',
-           repo_site +'SPT_exp1_image/Rfk80.png',
-           repo_site +'SPT_exp1_image/Rfk120.png',
-           repo_site +'SPT_exp1_image/Rfk160.png'
-          ]
+  repo_site +'SPT_exp1_image/ken.png',
+  repo_site +"'SPT_exp1_image/kf0.png ' width : 60vw",
+  repo_site +"'SPT_exp1_image/kf40.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/kf80.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/kf120.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/kf160.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rkf40.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rkff80.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rkf120.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rkf160.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/fk0.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/fk40.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/fk80.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/fk120.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/fk160.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rfk40.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rfk80.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rfk120.png' width : 60vw",
+  repo_site +"'SPT_exp1_image/Rfk160.png' width : 60vw"
+ ]
 }
 /*画像読み込み終わり*/
 
@@ -102,7 +102,7 @@ mesc1 = Date.now();
          type:  "html-keyboard-response",
         stimulus: function(){
           return(
-             '<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target1')+'.png" width="60%"></center>'
+             '<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target1')+'.png"></center>'
              
           );
             },
