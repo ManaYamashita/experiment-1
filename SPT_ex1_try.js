@@ -102,7 +102,8 @@ mesc1 = Date.now();
          type:  "html-keyboard-response",
         stimulus: function(){
           return(
-             '<div><center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target1')+'.png" width="10%"></center></div>'
+             '<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target1')+'.png" width="40vw"></center>'
+             
           );
             },
          choice: ['f' , 'j'],              
