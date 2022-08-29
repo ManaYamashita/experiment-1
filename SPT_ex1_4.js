@@ -94,7 +94,7 @@ var br = {
  var test1 = {
          type:  "html-keyboard-response",
         stimulus: function(){
-          var target_stimu='<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target')+'.png" width="50%"></center>';
+          var target_stimu='<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target')+'.png" width="60%"></center>';
           return target_stimu;
           },
         choice: ['f' , 'j'],
