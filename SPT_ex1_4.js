@@ -104,7 +104,7 @@ var br = {
           },
         
         on_finish: function(data){
-          datatime = jsPsych.pluginAPI.compareKeys(data.response);
+          data.correct = jsPsych.pluginAPI.compareKeys(data.response);
         }
  }
          
@@ -116,8 +116,6 @@ Qualtrics.SurveyEngine.setEmbeddeedData("datajs", datajs);
 data.flowerken = jsPsych.timelineVariable('cue');
 
 data.target = jsPsych.timelineVariable('target');
-
-data.rt = msec2-msec1;
 };
 
 
