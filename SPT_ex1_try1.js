@@ -145,14 +145,9 @@ var debrief_block = {
   type: "html-keyboard-response",
   trial_duration: 1000,
 
-  data: {
-    task: 'response',
-    correct_response: jsPsych.timelineVariable('correct_response')
-  },
-
   stimulus: function() {
   
-    if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
+    if (jsPsych.pluginAPI.compareKeys(response, correct_response)) {
       isCorrect = 1;
       return `<p> 正解</p>`;
 
