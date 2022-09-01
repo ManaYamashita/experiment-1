@@ -101,11 +101,11 @@ var br = {
        
         data: {
           task: 'response',
-          response_kye: jsPsych.timelineVariable('choice')
+          response_kye: jsPsych.timelineVariable('response_kye')
           },
         
         on_finish: function(data){
-          datatime = jsPsych.pluginAPI.compareKeys(data.response,data.response_kye);
+          datatime = jsPsych.pluginAPI.compareKeys(data.response, data.response_kye);
         }
  }
          
