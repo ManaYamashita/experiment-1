@@ -91,7 +91,7 @@ var test_stimuli = [
 
 ];
 
-var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 2);
+var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 4);
 
 
     
@@ -140,20 +140,24 @@ var br = {
     data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
   }
 };
+
          
 
-/*記録*/         
-         on_finish: (data) => {
-Qualtrics.SurveyEngine.setEmbeddeedData("datajs", datajs);    
+var debrief_block = {
+  type: "html-keyboard-response",
+  stimulus: function() {
 
-data.flowerken = jsPsych.timelineVariable('cue');
+    var trials = jsPsych.data.get().filter({task: 'response'});
+    var correct_trials = trials.filter({correct: true});
 
-data.target = jsPsych.timelineVariable('target');
+    return `<p> ${correct_trials}</p>`;
+      
+  }
 };
 
 
   var purosdure={
-    timeline:[ready, br, test, br, test1],
+    timeline:[ready, br, test, br, test1, debrief_block],
     timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
