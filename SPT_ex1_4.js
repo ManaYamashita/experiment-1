@@ -129,7 +129,7 @@ var br = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
-  item_width: jsPsych.timelineVariable('swid'),
+  item_width: 'swid',
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
@@ -154,7 +154,7 @@ data.target = jsPsych.timelineVariable('target');
     timeline:[ready, br, test, br, test1],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 5,
+    repetitions: 1,
 }
 
 timeline.push(purosdure);
