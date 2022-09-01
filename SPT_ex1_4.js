@@ -28,6 +28,7 @@ var preload = {
           ]
 }
 /*画像読み込み終わり*/
+var swid = document.documentElement.clientWidth*0.8;
  
 /*実験はじめ*/
 
@@ -127,6 +128,7 @@ var br = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
+  item_width: jsPsych.timelineVariable('swid'),
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
