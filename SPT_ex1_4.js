@@ -28,15 +28,14 @@ var preload = {
           ]
 }
 /*画像読み込み終わり*/
-var swid = document.documentElement.clientWidth*0.1;
-var shgt = document.documentElement.clientHeight*0.1;
+var swid = document.documentElement.clientWidth*0.8;
  
 /*実験はじめ*/
 
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まりますaaaaaaaaaaaa",
+        stimulus : "何かキーを押すと実験が始まります",
         };
  
         timeline.push(welcome);
