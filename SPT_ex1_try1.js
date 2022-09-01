@@ -144,6 +144,10 @@ var br = {
 var debrief_block = {
   type: "html-keyboard-response",
   trial_duration: 1000,
+  data: {
+    task: 'response',
+    correct_response: jsPsych.timelineVariable('correct_response')
+  },
 
   stimulus: function() {
   
