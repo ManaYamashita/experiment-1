@@ -149,9 +149,9 @@ var debrief_block = {
     correct_response: jsPsych.timelineVariable('correct_response')
   },
 
-  stimulus: function() {
+  stimulus: function(data) {
   
-    if (jsPsych.pluginAPI.compareKeys(data.response, correct_response)) {
+    if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
       isCorrect = 1;
       return `<p> 正解</p>`;
 
