@@ -151,7 +151,7 @@ var debrief_block = {
 
   stimulus: function() {
   
-    if (jsPsych.pluginAPI.compareKeys(response, correct_response)) {
+    if (jsPsych.pluginAPI.compareKeys(data.response, correct_response)) {
       isCorrect = 1;
       return `<p> 正解</p>`;
 
