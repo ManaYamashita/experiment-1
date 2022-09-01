@@ -101,7 +101,7 @@ var br = {
        
         data: {
           task: 'response',
-          response_kye: jsPsych.timelineVariable('response_kye')
+          response_kye: jsPsych.timelineVariable('choice')
           },
         
         on_finish: function(data){
