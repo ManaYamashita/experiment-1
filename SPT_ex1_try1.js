@@ -68,7 +68,7 @@ var test_stimuli = [
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk40.png', correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk80.png',  correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk120.png', correct_response: 'f'},
-  { cue:repo_site + 'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk160.png', correct_response: 'f'},
+  { cue　:repo_site + 'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk160.png', correct_response: 'f'},
   
   { cue: repo_site +'SPT_exp1_image/ken.png', target: repo_site +'SPT_exp1_image/kf0.png', correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/ken.png', target: repo_site +'SPT_exp1_image/kf40.png', correct_response: 'f'},
@@ -136,16 +136,19 @@ var br = {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
   },
-  on_finish: function(data){
-    data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
-  }
-};
+    }
+
 
          
 
 var debrief_block = {
   type: "html-keyboard-response",
   trial_duration: 1000,
+
+  data: {
+    task: 'response',
+    correct_response: jsPsych.timelineVariable('correct_response')
+  },
 
   stimulus: function() {
   
