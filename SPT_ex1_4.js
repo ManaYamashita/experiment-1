@@ -35,7 +35,7 @@ var swid = document.documentElement.clientWidth*0.8;
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まります",
+        stimulus : "何かキーを押すと実験が始まりますqqq",
         };
  
         timeline.push(welcome);
@@ -113,6 +113,7 @@ var test = {
       type:"image-keyboard-response",
        stimulus: jsPsych.timelineVariable('cue'),
        choices: 'NO_KEYS',
+       trial_duration: 1000,
         };
 
 var br = {
@@ -124,7 +125,7 @@ var br = {
 
  /*timeline.push(br);*/
 
- var test = {
+ var test1 = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
