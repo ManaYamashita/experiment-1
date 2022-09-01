@@ -36,7 +36,7 @@ var shgt = document.documentElement.clientHeight*0.1;
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まります",
+        stimulus : "何かキーを押すと実験が始まりますaaaaaaaaaaaa",
         };
  
         timeline.push(welcome);
@@ -130,7 +130,7 @@ var br = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
-  stimulus_width: 300,
+  stimulus_width: document.documentElement.clientWidth*0.1,
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
