@@ -36,7 +36,7 @@ var shgt = document.documentElement.clientHeight*0.1;
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まりますbbb",
+        stimulus : "何かキーを押すと実験が始まります",
         };
  
         timeline.push(welcome);
