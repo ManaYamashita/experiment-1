@@ -145,14 +145,21 @@ var br = {
 
 var debrief_block = {
   type: "html-keyboard-response",
+  trial_duration: 1000,
+
   stimulus: function() {
+  
+    if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
+      isCorrect = 1;
+      return `<p> 正解</p>`;
 
-    var trials = jsPsych.data.get().filter({task: 'response'});
-    var correct_trials = trials.filter({correct: true});
-
-    return `<p> ${correct_trials}</p>`;
+    } else {
+      isCorrect = 0;
+      return `<p> 不正解</p>`;
+    };  
       
   }
+  
 };
 
 
