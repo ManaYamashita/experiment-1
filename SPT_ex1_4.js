@@ -34,7 +34,7 @@ var preload = {
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まります",
+        stimulus : "何かキーを押すと実験が始まります1",
         };
  
         timeline.push(welcome);
@@ -149,7 +149,7 @@ data.target = jsPsych.timelineVariable('target');
 
   var purosdure={
     timeline:[ready, br, test, br, test1],
-    timeline_variables: combi_stimulus,
+    timeline_variables: test_stimulus,
     randomize_order: true,
     repetitions: 1,
 }
