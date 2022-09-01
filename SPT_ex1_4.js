@@ -110,7 +110,7 @@ var ready = {
 
 var test = {
       type:"image-keyboard-response",
-       stimulus: jsPsych.timelineVariable('cue'),
+       stimulus: 'cue',
        choices: 'NO_KEYS',
         };
 
@@ -125,7 +125,7 @@ var br = {
 
  var test = {
   type:"image-keyboard-response",
-  stimulus: jsPsych.timelineVariable('target'),
+  stimulus: 'target',
   choices: ['f', 'j'],
   data: {
     task: 'response',
