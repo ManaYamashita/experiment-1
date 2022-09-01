@@ -49,12 +49,48 @@ var instructions = {
     
 /*教示おわり*/
 
-  var stimulus_ver = {
-    cue:['flower','ken'],
-    target:['kf0','kf40','kf80','kf120','kf160','Rkf40','Rkf80','Rkf120','Rkf160','fk0','fk40','fk80','fk120','fk160','Rfk40','Rfk80','Rfk120','Rfk160']
-  };
+var test_stimuli = [
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/kf0.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/kf40.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/kf80.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/kf120.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/kf160.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rkf40.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rkf80.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rkf120.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rkf160.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/fk0.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/fk40.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/fk80.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/fk120.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/fk160.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rfk40.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rfk80.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rfk120.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/flower', target: 'SPT_exp1_image/Rfk160.png', data: {test_part: 'test', correct_response: 'f'}},
+  
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/kf0.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/kf40.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/kf80.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/kf120.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/kf160.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rkf40.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rkf80.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rkf120.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rkf160.png', data: {test_part: 'test', correct_response: 'f'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/fk0.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/fk40.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/fk80.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/fk120.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/fk160.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rfk40.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rfk80.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rfk120.png', data: {test_part: 'test', correct_response: 'j'}},
+  { cue: 'SPT_exp1_image/ken', target: 'SPT_exp1_image/Rfk160.png', data: {test_part: 'test', correct_response: 'j'}},
 
-  var combi_stimulus = jsPsych.randomization.factorial(stimulus_ver,1);/*計36試行*/
+];
+
+
     
 
 /*試行開始*/
@@ -73,14 +109,10 @@ var ready = {
        /* timeline.push(br);*/
 
 var test = {
-         type:  "html-keyboard-response",
-         stimulus: function(){
-            var cue_stimu='<center><img src= "'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('cue')+'.png" width="100%"></center>';
-          return cue_stimu;
-          },
-         choice: 'NO_KEYS',
-         trial_duration: 1000,
-      };
+      type:"image-keyboard-response",
+       stimulus: jsPsych.timelineVariable('cue'),
+       choices: 'NO_KEYS',
+        };
 
 var br = {
       type: "html-keyboard-response",
@@ -91,23 +123,18 @@ var br = {
 
  /*timeline.push(br);*/
 
- var test1 = {
-         type:  "html-keyboard-response",
-        stimulus: function(){
-          var target_stimu='<center><img src="'+ repo_site +'SPT_exp1_image/'+jsPsych.timelineVariable('target')+'.png" width="60%"></center>';
-          return target_stimu;
-          },
-        choice: ['f' , 'j'],
-       
-        data: {
-          task: 'response',
-          response_kye: jsPsych.timelineVariable('choice')
-          },
-        
-        on_finish: function(data){
-          datatime = jsPsych.pluginAPI.compareKeys(data.response, data.response_kye);
-        }
- }
+ var test = {
+  type:"image-keyboard-response",
+  stimulus: jsPsych.timelineVariable('target'),
+  choices: ['f', 'j'],
+  data: {
+    task: 'response',
+    correct_response: jsPsych.timelineVariable('correct_response')
+  },
+  on_finish: function(data){
+    data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+  }
+};
          
 
 /*記録*/         
