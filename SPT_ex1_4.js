@@ -130,7 +130,7 @@ var br = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
-  stimulus_width: jsPsych.timelineVariable('swid'),
+  stimulus_width: 300,
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
