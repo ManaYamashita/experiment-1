@@ -28,15 +28,14 @@ var preload = {
           ]
 }
 /*画像読み込み終わり*/
-var swid = document.documentElement.clientWidth*0.1;
-var shgt = document.documentElement.clientHeight*0.1;
+var swid = document.documentElement.clientWidth;
  
 /*実験はじめ*/
 
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まりますyo",
+        stimulus : "何かキーを押すと実験が始まります",
         };
  
         timeline.push(welcome);
@@ -132,8 +131,7 @@ var br = {
   type:"image-keyboard-response",
   stimulus: jsPsych.timelineVariable('target'),
   choices: ['f', 'j'],
-  item_width: jsPsych.timelineVariable('swid'),
-  item_height: jsPsych.timelineVariable('shgt'),
+  stimulus_width: document.documentElement.clientWidth*0.6,
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
@@ -144,12 +142,19 @@ var br = {
 };
          
 
+/*記録*/         
+         on_finish: (data) => {
+Qualtrics.SurveyEngine.setEmbeddeedData("datajs", datajs);    
 
+data.flowerken = jsPsych.timelineVariable('cue');
+
+data.target = jsPsych.timelineVariable('target');
+};
 
 
   var purosdure={
     timeline:[ready, br, test, br, test1],
-    timeline_variables: test_stimuli,
+    timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
 }
