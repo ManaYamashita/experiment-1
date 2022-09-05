@@ -146,14 +146,15 @@ var br = {
     stimulus: function(data) {
       var resp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('response').values;
       var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
-
       console.log(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp'));
   
-     if (jsPsych.pluginAPI.compareKeys(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp')))
+     if (jsPsych.pluginAPI.compareKeys('resp'),('cresp'))
      return true;
       
      else
      return false;
+
+     
         
     }    
   };
