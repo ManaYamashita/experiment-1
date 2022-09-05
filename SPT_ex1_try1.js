@@ -35,7 +35,7 @@ var swid = document.documentElement.clientWidth;
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まります",
+        stimulus : "何かキーを押すと実験が始まります1",
         };
  
         timeline.push(welcome);
@@ -149,7 +149,7 @@ var br = {
 
       console.log(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp'));
   
-     if (jsPsych.pluginAPI.compareKeys(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp'))
+     if (jsPsych.pluginAPI.compareKeys(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp')))
      return true;
       
      else
