@@ -148,7 +148,7 @@ var br = {
       var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
       console.log(jsPsych.timelineVariable('resp'),jsPsych.timelineVariable('cresp'));
   
-     if (jsPsych.pluginAPI.compareKeys('resp'),('cresp'))
+     if (jsPsych.pluginAPI.compareKeys('resp','cresp'))
      return true;
       
      else
