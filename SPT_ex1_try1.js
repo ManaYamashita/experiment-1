@@ -148,13 +148,10 @@ var br = {
       var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
   
      if (jsPsych.pluginAPI.compareKeys('resp','cresp'))
-      console.log('true');
+     return true;
       
      else
-      console.log('false');
-
-  
-      return 0;
+     return false;
         
     }    
   };
