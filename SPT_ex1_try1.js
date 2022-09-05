@@ -35,7 +35,7 @@ var swid = document.documentElement.clientWidth;
 
 var welcome = {
         type : "html-keyboard-response",
-        stimulus : "何かキーを押すと実験が始まります",
+        stimulus : "何かキーを押すと実験が始まります1",
         };
  
         timeline.push(welcome);
@@ -68,7 +68,7 @@ var test_stimuli = [
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk40.png', correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk80.png',  correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk120.png', correct_response: 'f'},
-  { cue　:repo_site + 'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk160.png', correct_response: 'f'},
+  { cue:repo_site + 'SPT_exp1_image/flower.png', target:  repo_site +'SPT_exp1_image/Rfk160.png', correct_response: 'f'},
   
   { cue: repo_site +'SPT_exp1_image/ken.png', target: repo_site +'SPT_exp1_image/kf0.png', correct_response: 'f'},
   { cue: repo_site +'SPT_exp1_image/ken.png', target: repo_site +'SPT_exp1_image/kf40.png', correct_response: 'f'},
@@ -144,14 +144,10 @@ var br = {
 var debrief_block = {
   type: "html-keyboard-response",
   trial_duration: 1000,
-  data: {
-    task: 'response',
-    correct_response: jsPsych.timelineVariable('correct_response')
-  },
-
+ 
   stimulus: function(data) {
-  
-    if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
+    
+      if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
       isCorrect = 1;
       return `<p> 正解</p>`;
 
