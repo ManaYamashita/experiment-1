@@ -137,28 +137,25 @@ var br = {
     correct_response: jsPsych.timelineVariable('correct_response')
   },
     }
-
-
-         
-
-var debrief_block = {
-  type: "html-keyboard-response",
-  trial_duration: 1000,
- 
-  stimulus: function(data) {
     
-      if (jsPsych.pluginAPI.compareKeys(data.response, data.correct_response)) {
-      isCorrect = 1;
-      return `<p> 正解</p>`;
-
-    } else {
-      isCorrect = 0;
-      return `<p> 不正解</p>`;
-    };  
-      
-  }
+ 
+   var debrief_block = {
+    type: "html-keyboard-response",
+    trial_duration: 1000,
   
-};
+    stimulus: function(data) {
+      var resp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('response').values;
+      var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
+  
+     if (jsPsych.pluginAPI.compareKeys(resp, cresp))
+      console.log('true');
+     else
+      console.log('false');
+  
+      return 0;
+        
+    }    
+  };
 
 
   var purosdure={
