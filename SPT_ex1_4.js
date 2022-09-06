@@ -13,7 +13,7 @@ var preload = {
            repo_site +'SPT_exp1_image/kf120.png',
            repo_site +'SPT_exp1_image/kf160.png',
            repo_site +'SPT_exp1_image/Rkf40.png',
-           repo_site +'SPT_exp1_image/Rkff80.png',
+           repo_site +'SPT_exp1_image/Rkf80.png',
            repo_site +'SPT_exp1_image/Rkf120.png',
            repo_site +'SPT_exp1_image/Rkf160.png',
            repo_site +'SPT_exp1_image/fk0.png',
