@@ -27,6 +27,7 @@ var preload = {
            repo_site +'SPT_exp1_image/Rfk160.png'
           ]
 }
+timeline.push(preload);
 /*画像読み込み終わり*/
 var swid = document.documentElement.clientWidth;
  
@@ -134,6 +135,7 @@ var br = {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
   },
+  
   on_finish: function(data){
     data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
   }

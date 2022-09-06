@@ -13,7 +13,7 @@ var preload = {
            repo_site +'SPT_exp1_image/kf120.png',
            repo_site +'SPT_exp1_image/kf160.png',
            repo_site +'SPT_exp1_image/Rkf40.png',
-           repo_site +'SPT_exp1_image/Rkff80.png',
+           repo_site +'SPT_exp1_image/Rkf80.png',
            repo_site +'SPT_exp1_image/Rkf120.png',
            repo_site +'SPT_exp1_image/Rkf160.png',
            repo_site +'SPT_exp1_image/fk0.png',
@@ -27,6 +27,7 @@ var preload = {
            repo_site +'SPT_exp1_image/Rfk160.png'
           ]
 }
+timeline.push(preload);
 /*画像読み込み終わり*/
 var swid = document.documentElement.clientWidth;
  
@@ -40,14 +41,7 @@ var welcome = {
  
         timeline.push(welcome);
 
- /*教示はじめ*/
-var instructions = {
-      type: "html-keyboard-response",
-      stimulus: "<p>教示</p>" 
-                 };
-
-        timeline.push(instructions);
-    
+ 
 /*教示おわり*/
 
 var test_stimuli = [
@@ -147,16 +141,21 @@ var br = {
       var resp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('response').values;
       var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
 
-      console.log(('resp','cresp'));
-  
-     if (jsPsych.data.getLastTrialData().filter({task: 'response'}).select('response').value == jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values)
-     return true;
-      
-     else
-     return false;
+      console.log(resp);
+      console.log(cresp);
 
-     
-        
+     if (resp == "f" & cresp=="f"){
+const choi = true;
+     return choi;} 
+
+     else if (resp == "j" & cresp=="j"){
+const choi = true;
+     return choi;} 
+      
+     else{
+const choi = false;
+     return choi;}
+
     }    
   };
 
@@ -167,6 +166,7 @@ var br = {
     randomize_order: true,
     repetitions: 1,
 }
+
 
 timeline.push(purosdure);
 
