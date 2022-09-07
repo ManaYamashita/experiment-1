@@ -145,15 +145,15 @@ var br = {
       console.log(cresp);
 
      if (resp == "f" & cresp=="f"){
-const choi = true;
+const choi = "正解";
      return choi;} 
 
      else if (resp == "j" & cresp=="j"){
-const choi = true;
+const choi = "正解";
      return choi;} 
       
      else{
-const choi = false;
+const choi = "不正解";
      return choi;}
 
     }    
