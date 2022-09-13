@@ -1,7 +1,5 @@
 var repo_site = "https://manayamashita.github.io/experiment-1/";
 
-<input type="button" value="button" id="btn"></input>
-
 var timeline = [];
 
 
