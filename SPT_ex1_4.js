@@ -156,7 +156,7 @@ data.target = jsPsych.timelineVariable('target');
     timeline:[ready, br, test, br, test1],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 1,
+    repetitions: 3,
 }
 
 timeline.push(purosdure);
