@@ -24,8 +24,9 @@ var swid = document.documentElement.clientWidth;
 
 
 var welcome = {
-        type : "html-keyboard-response",
+        type : 'html-button-response',
         stimulus : "何かキーを押すと実験が始まります",
+　　　　　choices: ['START'],
         };
  
         timeline.push(welcome);
