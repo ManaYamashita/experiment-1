@@ -2,7 +2,6 @@ var repo_site = "https://manayamashita.github.io/experiment-1/";
 
 var timeline = [];
 
-
 /*画像読み込み*/
 var preload = {
   type: 'preload',
@@ -24,19 +23,22 @@ var swid = document.documentElement.clientWidth;
 
 
 var welcome = {
-        type : 'html-button-response',
-        stimulus : "何かキーを押すと実験が始まります",
-　　　　　choices: ['START'],
-        };
- 
+
+  type: 'fullscreen',
+      message: '<p>ウィンドウサイズを最大化します。「次に進む」を押すと実験が始まります。</p>',
+      button_label: '次に進む',
+      fullscreen_mode: true, // 全画面表示にする
+    };
+  
         timeline.push(welcome);
 
  /*教示はじめ*/
 var instructions = {
-      type: "html-keyboard-response",
-      stimulus: "<p>Ready?が表示されたら、スペースキー。</p>" +
-      "<p>1枚目に表示される画像と2枚目に表示される画像が同じだったらｊキー。違ったらｆキー。</p>"+
-      "<p> ”かわいい” ドラえもんがたくさん出てきます ♡ </p>"
+      type: 'html-button-response',
+      stimulus: "<p>1枚目に表示される画像と2枚目に表示される画像が同じだったら「同じ」ボタン。違ったら「違う」ボタン。</p>"+
+      "<p> ”かわいい” ドラえもんがたくさん出てきます ♡ </p>"+
+      "<p>全部で4試行です</p>",
+      choices: ['始める'],
                  };
 
         timeline.push(instructions);
@@ -122,10 +124,6 @@ var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 4);
     
 
 /*試行開始*/
-var ready = {
-      type: "html-keyboard-response",
-      stimulus: "<p>Ready？</p>" 
-                    };
 
  var br = {
       type: "html-keyboard-response",
@@ -153,9 +151,9 @@ var br = {
  /*timeline.push(br);*/
 
  var test1 = {
-  type:"image-keyboard-response",
+  type: 'image-button-response',
   stimulus: jsPsych.timelineVariable('target'),
-  choices: ['f', 'j'],
+  choices: ['同じ','違う'],
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
@@ -174,11 +172,11 @@ var br = {
       console.log(resp);
       console.log(cresp);
 
-     if (resp == "f" & cresp=="f"){
+     if (resp == "1" & cresp=="f"){
 const choi = "♡ ドラえもん　かわいい ♡";
      return choi;} 
 
-     else if (resp == "j" & cresp=="j"){
+     else if (resp == "0" & cresp=="j"){
 const choi = "♡ ドラえもん スキ♡";
      return choi;} 
       
@@ -191,7 +189,7 @@ const choi = "Not ドラえもん ( ﾉД`)";
 
 
   var purosdure={
-    timeline:[ready, br, test, br, test1, debrief_block],
+    timeline:[br, test, br, test1, debrief_block],
     timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
@@ -199,3 +197,12 @@ const choi = "Not ドラえもん ( ﾉД`)";
 
 
 timeline.push(purosdure);
+
+var fin = {
+  type: 'image-button-response',
+  stimulus: 'dora_image/0.png',
+  choices: ['終わる'],
+  
+    }
+
+    timeline.push(fin);
