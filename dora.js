@@ -24,10 +24,10 @@ var swid = document.documentElement.clientWidth;
 
 var welcome = {
 
-  type: 'fullscreen',
-      message: '<p>ウィンドウサイズを最大化します。「次に進む」を押すと実験が始まります。</p>',
-      button_label: '次に進む',
-      fullscreen_mode: true, // 全画面表示にする
+  type: 'html-button-response',
+  stimulus: '<p>「次に進む」を押すと実験が始まります。</p>',
+      choices: ['次に進む'],
+       // 全画面表示にする
     };
   
         timeline.push(welcome);
@@ -35,7 +35,7 @@ var welcome = {
  /*教示はじめ*/
 var instructions = {
       type: 'html-button-response',
-      stimulus: "<p>1枚目に表示される画像と2枚目に表示される画像が同じだったら「同じ」ボタン。違ったら「違う」ボタン。</p>"+
+      stimulus: "<p>1枚目と2枚目に表示される画像が同じだったら「同じ」ボタン。違ったら「違う」ボタン。</p>"+
       "<p> ”かわいい” ドラえもんがたくさん出てきます ♡ </p>"+
       "<p>全部で4試行です</p>",
       choices: ['始める'],
