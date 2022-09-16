@@ -5,13 +5,12 @@ var timeline = [];
 /*画像読み込み*/
 var preload = {
   type: 'preload',
-  images: [repo_site + 'dora_image/A.png',
+  images: [repo_site +'dora_image/A.png',
            repo_site +'dora_image/B.png',
            repo_site +'dora_image/C.png',
            repo_site +'dora_image/D.png',
            repo_site +'dora_image/E.png',
-           repo_site +'dora_image/F.png',
-           repo_site +'dora_image/G.png',          
+           repo_site +'dora_image/F.png',       
           ]
 }
 timeline.push(preload);
@@ -22,47 +21,47 @@ var swid = document.documentElement.clientWidth;
 /*教示おわり*/
 
 var test_stimuli = [
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/A.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/B.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/C.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/D.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/E.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/F.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/A.png', correct_response: '0'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/B.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/C.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/D.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/E.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/F.png', correct_response: '1'},
 
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/A.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/B.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/C.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/D.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/E.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/F.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/A.png',  correct_response: '1'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/B.png', correct_response: '0'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/C.png',  correct_response: '1'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/D.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/E.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/F.png', correct_response: '1'},
   
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/C.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/A.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/B.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/C.png', correct_response: '0'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/D.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/E.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/F.png', correct_response: '1'},
   
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/D.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/A.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/B.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/C.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/D.png', correct_response: '0'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/E.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/F.png', correct_response: '1'},
 
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/E.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/A.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/B.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/C.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/D.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/E.png', correct_response: '0'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/F.png', correct_response: '1'},
  
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/F.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/A.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/B.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/C.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/D.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/E.png', correct_response: '1'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/F.png', correct_response: '0'},
    
 ];
 
@@ -83,7 +82,7 @@ var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 4);
 var test = {
       type:"image-keyboard-response",
        stimulus: jsPsych.timelineVariable('cue'),
-       stimulus_width: document.documentElement.clientWidth*0.6,
+       stimulus_width: document.documentElement.clientWidth*0.2,
        choices: 'NO_KEYS',
        trial_duration: 1000,
         };
@@ -100,12 +99,16 @@ var br = {
  var test1 = {
   type: 'image-button-response',
   stimulus: jsPsych.timelineVariable('target'),
-  stimulus_width: document.documentElement.clientWidth*0.6,
+  stimulus_width: document.documentElement.clientWidth*0.2,
   choices: ['同じ','違う'],
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
   },
+
+  on_finish: function(data){
+    data.correct = data.response == data.correct_response;
+  }
     }
     
  
@@ -120,11 +123,11 @@ var br = {
       console.log(resp);
       console.log(cresp);
 
-     if (resp == "1" & cresp=="f"){
+     if (resp == "1" & cresp=="1"){
 const choi = "♡ ドラえもん　かわいい ♡";
      return choi;} 
 
-     else if (resp == "0" & cresp=="j"){
+     else if (resp == "0" & cresp=="0"){
 const choi = "♡ ドラえもん スキ♡";
      return choi;} 
       
@@ -146,11 +149,18 @@ const choi = "Not ドラえもん ( ﾉД`)";
 
 timeline.push(purosdure);
 
-var fin = {
-  type: 'image-button-response',
-  stimulus: 'dora_image/0.png',
+var debrief_block = {
+  type:  "html-button-response",
   choices: ['終わる'],
-  
-    }
+  stimulus: function() {
 
-    timeline.push(fin);
+    var trials = jsPsych.data.get().filter({task: 'response'});
+    var correct_trials = trials.filter({correct: true});
+    var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+
+    return `<p>"ドラえもん正解率は...${accuracy}%</p>
+      <p>「終わる」を押すと終了します</p>`;
+
+  }
+};
+timeline.push(debrief_block);
