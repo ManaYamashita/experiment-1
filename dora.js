@@ -5,119 +5,65 @@ var timeline = [];
 /*画像読み込み*/
 var preload = {
   type: 'preload',
-  images: [repo_site + 'dora_image/0.png',
-           repo_site +'dora_image/30.png',
-           repo_site +'dora_image/45.png',
-           repo_site +'dora_image/75.png',
-           repo_site +'dora_image/90.png',
-           repo_site +'dora_image/R30.png',
-           repo_site +'dora_image/R45.png',
-           repo_site +'dora_image/R75.png'           
+  images: [repo_site + 'dora_image/A.png',
+           repo_site +'dora_image/B.png',
+           repo_site +'dora_image/C.png',
+           repo_site +'dora_image/D.png',
+           repo_site +'dora_image/E.png',
+           repo_site +'dora_image/F.png',
+           repo_site +'dora_image/G.png',          
           ]
 }
 timeline.push(preload);
 /*画像読み込み終わり*/
 var swid = document.documentElement.clientWidth;
  
-/*実験はじめ*/
-
-
-var welcome = {
-
-  type: 'html-button-response',
-  stimulus: '<p>「次に進む」を押すと実験が始まります。</p>',
-      choices: ['次に進む'],
-       // 全画面表示にする
-    };
-  
-        timeline.push(welcome);
-
- /*教示はじめ*/
-var instructions = {
-      type: 'html-button-response',
-      stimulus: "<p>1枚目と2枚目に表示される画像が同じだったら「同じ」ボタン。違ったら「違う」ボタン。</p>"+
-      "<p> ”かわいい” ドラえもんがたくさん出てきます ♡ </p>"+
-      "<p>全部で4試行です</p>",
-      choices: ['始める'],
-                 };
-
-        timeline.push(instructions);
     
 /*教示おわり*/
 
 var test_stimuli = [
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/0.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/R45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/0.png', target:  repo_site +'dora_image/R75.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/A.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/B.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/C.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/D.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/E.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/A.png', target:  repo_site +'dora_image/F.png', correct_response: 'f'},
 
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/0.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/30.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/45.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/R45.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/30.png', target:  repo_site +'dora_image/R75.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/A.png',  correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/B.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/C.png',  correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/D.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/E.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/B.png', target:  repo_site +'dora_image/F.png', correct_response: 'f'},
   
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/75.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target: repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target:  repo_site +'dora_image/R45.png',  correct_response: 'f'},
-  { cue: repo_site +'dora_image/45.png', target:  repo_site +'dora_image/R75.png', correct_response: 'f'},
-
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/75.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/R45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/75.png', target: repo_site +'dora_image/R75.png', correct_response: 'f'},
-
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/90.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/R45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/90.png', target: repo_site +'dora_image/R75.png', correct_response: 'f'},
-
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/R30.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/R45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R30.png', target: repo_site +'dora_image/R75.png', correct_response: 'f'},
-
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/R45.png', correct_response: 'j'},
-  { cue: repo_site +'dora_image/R45.png', target: repo_site +'dora_image/R75.png', correct_response: 'f'},
-
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/0.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/75.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/90.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/R30.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/R45.png', correct_response: 'f'},
-  { cue: repo_site +'dora_image/R75.png', target: repo_site +'dora_image/R75.png', correct_response: 'j'}
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/C.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/C.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
   
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/D.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/D.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
+
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/E.png', correct_response: 'j'},
+  { cue: repo_site +'dora_image/E.png', target: repo_site +'dora_image/F.png', correct_response: 'f'},
+ 
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/A.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/B.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/C.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/D.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/E.png', correct_response: 'f'},
+  { cue: repo_site +'dora_image/F.png', target: repo_site +'dora_image/F.png', correct_response: 'j'},
+   
 ];
 
 var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 4);
