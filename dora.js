@@ -137,6 +137,7 @@ var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 4);
 var test = {
       type:"image-keyboard-response",
        stimulus: jsPsych.timelineVariable('cue'),
+       stimulus_width: document.documentElement.clientWidth*0.4,
        choices: 'NO_KEYS',
        trial_duration: 1000,
         };
@@ -153,6 +154,7 @@ var br = {
  var test1 = {
   type: 'image-button-response',
   stimulus: jsPsych.timelineVariable('target'),
+  stimulus_width: document.documentElement.clientWidth*0.4,
   choices: ['同じ','違う'],
   data: {
     task: 'response',
