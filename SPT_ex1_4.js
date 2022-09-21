@@ -39,14 +39,6 @@ var welcome = {
 
   timeline.push(welcome);
 
-/*教示はじめ*/
-var instructions = {
-type: "html-keyboard-response",
-stimulus: "<p>教示</p>" 
-           };
-
-  timeline.push(instructions);
-
     
 /*教示おわり*/
 
@@ -90,9 +82,6 @@ var test_stimuli = [
   { cue: repo_site +'SPT_exp1_image/ken.png', target: repo_site +'SPT_exp1_image/Rfk160.png', correct_response: 'j', kaku: Rfk160},
 
 ];
-
-
-    
 
 /*試行開始*/
 
