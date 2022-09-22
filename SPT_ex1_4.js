@@ -126,9 +126,7 @@ var br = {
   },
   
   on_finish: function(data){
-    data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
-    data.flowerken = jsPsych.timelineVariable('cue');
-    data.target = jsPsych.timelineVariable('target'); 
+    data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response); 
     data.kaku = jsPsych.timelineVariable('kaku');
   }
 };
