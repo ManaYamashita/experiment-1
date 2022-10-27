@@ -22,6 +22,6 @@ var trial = {
     trial_ends_after_video: true
   };
 
- timeline.push(test);
+ timeline.push(trial);
 
 /*試行終了*/
