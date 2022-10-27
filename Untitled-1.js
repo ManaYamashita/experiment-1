@@ -18,9 +18,9 @@ var  test_stimuli = [
 
 var test = {
       type:"video-keyboard-response",
-       stimulus:repo_site +'WIN_20221027_18_45_36_Pro.gif',
+       stimulus:[repo_site +'WIN_20221027_18_45_36_Pro.gif'],
        choice: 'NO_KEYS',
-       trial_duration: 1000,};
+       trial_ends_after_video: true};
 
  timeline.push(test);
 
