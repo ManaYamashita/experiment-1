@@ -16,12 +16,6 @@ var  test_stimuli = [
 
 /*試行開始*/
 
-
-var ready = {
-    type: "html-keyboard-response",
-    stimulus: "<p>Ready？</p>" 
-                  };
-
 var test = {
       type:"video-keyboard-response",
        stimulus:repo_site +'WIN_20221027_18_45_36_Pro.gif',
