@@ -13,11 +13,14 @@ var swid = document.documentElement.clientWidth;
 
 /*試行開始*/
 
-var test = {
-      type:"video-keyboard-response",
-       stimulus:[repo_site +'WIN_20221027_18_45_36_Pro.gif'],
-       choice: 'NO_KEYS',
-       trial_ends_after_video: true};
+var trial = {
+    type: 'video-keyboard-response',
+    stimulus: [
+        repo_site +'WIN_20221027_18_45_36_Pro.gif'
+    ],
+    choices: jsPsych.NO_KEYS,
+    trial_ends_after_video: true
+  };
 
  timeline.push(test);
 
