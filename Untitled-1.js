@@ -18,7 +18,7 @@ var  test_stimuli = [
 
 
 var test = {
-      type:"jspsych-video-keyboard-response",
+      type:"video-keyboard-response",
        stimulus: jsPsych.timelineVariable('cue'),
        choices: 'NO_KEYS',
        trial_duration: 1000,
