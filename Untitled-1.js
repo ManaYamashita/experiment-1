@@ -5,14 +5,14 @@ var timeline = [];
 /*画像読み込み*/
 var preload = {
   type: 'preload',
-  images: [repo_site + 'WIN_20221027_18_45_36_Pro.mp4']
+  images: [repo_site + 'WIN_20221027_18_45_36_Pro.gif']
 };
 timeline.push(preload);
 /*画像読み込み終わり*/
 var swid = document.documentElement.clientWidth;
 
 var  test_stimuli = [
-    { cue: repo_site +'WIN_20221027_18_45_36_Pro.mp4'}]
+    { cue: repo_site +'WIN_20221027_18_45_36_Pro.gif'}]
 
 /*試行開始*/
 
@@ -21,7 +21,7 @@ var ready = {
     type: "html-keyboard-response",
     stimulus: "<p>Ready？</p>" 
                   };
-                  
+
 var test = {
       type:"video-keyboard-response",
        stimulus: jsPsych.timelineVariable('cue'),
