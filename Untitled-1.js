@@ -24,10 +24,8 @@ var ready = {
 
 var test = {
       type:"video-keyboard-response",
-       stimulus: repo_site +'WIN_20221027_18_45_36_Pro.gif',
-       choices: 'NO_KEYS',
-       trial_duration: 1000,
-        };
+       stimulus:repo_site +'WIN_20221027_18_45_36_Pro.gif',
+       choices: 'f'};
 
  timeline.push(test);
 
