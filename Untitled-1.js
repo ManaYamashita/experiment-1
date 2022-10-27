@@ -19,7 +19,8 @@ var  test_stimuli = [
 var test = {
       type:"video-keyboard-response",
        stimulus:repo_site +'WIN_20221027_18_45_36_Pro.gif',
-       choices: 'f'};
+       choice: 'NO_KEYS',
+       trial_duration: 1000,};
 
  timeline.push(test);
 
