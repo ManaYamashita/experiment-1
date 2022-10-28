@@ -122,6 +122,7 @@ var test = {
       type: "html-keyboard-response",
       stimulus: '<div style="font-size:60px;">+</div>',
       choices: "NO_KEYS",
+      trial_duration: 1000,
        };
 
 
