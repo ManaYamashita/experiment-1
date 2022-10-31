@@ -103,7 +103,7 @@ var test_stimuli = [
   ];
   
 var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 14);
-var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli1, 14);
+var test_rand1 = jsPsych.randomization.sampleWithReplacement(test_stimuli1, 14);
 
 
     
@@ -181,7 +181,7 @@ const choi = "不正解";
 
   var purosdure={
     timeline:[ready, br, test, br, test1, debrief_block],
-    timeline_variables: test_rand,
+    timeline_variables: [test_rand,test_rand1],
     randomize_order: true,
     repetitions: 1,
 }
