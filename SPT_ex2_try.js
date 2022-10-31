@@ -102,8 +102,8 @@ var test_stimuli = [
   {target:  repo_site +'SPT_exp2_image/gRkf160.png', correct_response: 'j', kaku: 'gRkf160'},
   ];
   
-var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 5);
-var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli1, 5);
+var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 14);
+var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli1, 14);
 
 
     
