@@ -78,32 +78,33 @@ var test_stimuli = [
     {target:  repo_site +'SPT_exp2_image/gRfk80.png',  correct_response: 'f', kaku: 'gRfk80'},
     {target:  repo_site +'SPT_exp2_image/gRfk120.png', correct_response: 'f', kaku: 'gRfk120'},
     {target:  repo_site +'SPT_exp2_image/gRfk160.png', correct_response: 'f', kaku: 'gRfk160'},
+
+    {target: repo_site +'SPT_exp2_image/fk40.png', correct_response: 'j', kaku: 'fk40'},
+    {target: repo_site +'SPT_exp2_image/fk80.png',  correct_response: 'j', kaku: 'fk80'},
+    {target: repo_site +'SPT_exp2_image/fk120.png', correct_response: 'j', kaku: 'fk120'},
+    {target: repo_site +'SPT_exp2_image/fk160.png', correct_response: 'j', kaku: 'fk160'},
+    {target: repo_site +'SPT_exp2_image/Rfk40.png', correct_response: 'j', kaku: 'Rfk40'},
+    {target: repo_site +'SPT_exp2_image/Rfk80.png',  correct_response: 'j', kaku: 'Rfk80'},
+    {target: repo_site +'SPT_exp2_image/Rfk120.png', correct_response: 'j', kaku: 'Rfk120'},
+    {target: repo_site +'SPT_exp2_image/Rfk160.png', correct_response: 'j', kaku: 'Rfk160'},
+  
+    {target:  repo_site +'SPT_exp2_image/gkf40.png', correct_response: 'j', kaku: 'gkf40'},
+    {target:  repo_site +'SPT_exp2_image/gkf80.png', correct_response: 'j', kaku: 'gkf80'},
+    {target:  repo_site +'SPT_exp2_image/gkf120.png', correct_response: 'j', kaku: 'gkf120'},
+    {target:  repo_site +'SPT_exp2_image/gkf160.png', correct_response: 'j', kaku: 'gkf160'},
+    {target:  repo_site +'SPT_exp2_image/gRkf40.png', correct_response: 'j', kaku: 'gRkf40'},
+    {target:  repo_site +'SPT_exp2_image/gRkf80.png', correct_response: 'j', kaku: 'gRkf80'},
+    {target:  repo_site +'SPT_exp2_image/gRkf120.png', correct_response: 'j', kaku: 'gRkf120'},
+    {target:  repo_site +'SPT_exp2_image/gRkf160.png', correct_response: 'j', kaku: 'gRkf160'},
   
   ];
 
   var test_stimuli1=[
 
-  {target: repo_site +'SPT_exp2_image/fk40.png', correct_response: 'j', kaku: 'fk40'},
-  {target: repo_site +'SPT_exp2_image/fk80.png',  correct_response: 'j', kaku: 'fk80'},
-  {target: repo_site +'SPT_exp2_image/fk120.png', correct_response: 'j', kaku: 'fk120'},
-  {target: repo_site +'SPT_exp2_image/fk160.png', correct_response: 'j', kaku: 'fk160'},
-  {target: repo_site +'SPT_exp2_image/Rfk40.png', correct_response: 'j', kaku: 'Rfk40'},
-  {target: repo_site +'SPT_exp2_image/Rfk80.png',  correct_response: 'j', kaku: 'Rfk80'},
-  {target: repo_site +'SPT_exp2_image/Rfk120.png', correct_response: 'j', kaku: 'Rfk120'},
-  {target: repo_site +'SPT_exp2_image/Rfk160.png', correct_response: 'j', kaku: 'Rfk160'},
-
-  {target:  repo_site +'SPT_exp2_image/gkf40.png', correct_response: 'j', kaku: 'gkf40'},
-  {target:  repo_site +'SPT_exp2_image/gkf80.png', correct_response: 'j', kaku: 'gkf80'},
-  {target:  repo_site +'SPT_exp2_image/gkf120.png', correct_response: 'j', kaku: 'gkf120'},
-  {target:  repo_site +'SPT_exp2_image/gkf160.png', correct_response: 'j', kaku: 'gkf160'},
-  {target:  repo_site +'SPT_exp2_image/gRkf40.png', correct_response: 'j', kaku: 'gRkf40'},
-  {target:  repo_site +'SPT_exp2_image/gRkf80.png', correct_response: 'j', kaku: 'gRkf80'},
-  {target:  repo_site +'SPT_exp2_image/gRkf120.png', correct_response: 'j', kaku: 'gRkf120'},
-  {target:  repo_site +'SPT_exp2_image/gRkf160.png', correct_response: 'j', kaku: 'gRkf160'},
+ 
   ];
   
-var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 14);
-var test_rand1 = jsPsych.randomization.sampleWithReplacement(test_stimuli1, 14);
+var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 27);
 
 
     
@@ -181,7 +182,7 @@ const choi = "不正解";
 
   var purosdure={
     timeline:[ready, br, test, br, test1, debrief_block],
-    timeline_variables: [test_rand,test_rand1],
+    timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
 }
