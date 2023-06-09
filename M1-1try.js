@@ -144,19 +144,41 @@ var welcome = {
     correct_response: jsPsych.timelineVariable('correct_response')
   },
   
-  on_finish: function(data){
-    data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response); 
-    data.kaku = jsPsych.timelineVariable('stimu');
-  }
+};
+
+var debrief_block = {
+  type: "html-keyboard-response",
+  trial_duration: 1000,
+
+  stimulus: function(data) {
+    var resp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('response').values;
+    var cresp = jsPsych.data.getLastTrialData().filter({task: 'response'}).select('correct_response').values;
+
+    console.log(resp);
+    console.log(cresp);
+
+   if (resp == "f" & cresp=="f"){
+const choi = "正解";
+   return choi;} 
+
+   else if (resp == "j" & cresp=="j"){
+const choi = "正解";
+   return choi;} 
+    
+   else{
+const choi = "不正解";
+   return choi;}
+
+  }    
 };
         
 
 
   var purosdure={
-    timeline:[fy, br, face, table, test],
+    timeline:[fy, br, face, table, test, debrief_block],
     timeline_variables: test_rand,
     randomize_order: true,
-    repetitions: 2,
+    repetitions: 1,
 }
 
 timeline.push(purosdure);
