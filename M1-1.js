@@ -160,10 +160,5 @@ var welcome = {
 
 timeline.push(purosdure);
 
-jsPsych.init({
-      timeline: timeline,
-      on_finish: function() {
-        jsPsych.data.displayData();
-      }
-    });
+
 
