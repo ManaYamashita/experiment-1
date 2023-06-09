@@ -102,6 +102,11 @@ var welcome = {
     {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_315.png',  correct_response: 'f', sitmu: 're_right_315'},
   ]
 
+
+  var ready = {
+    type: "html-keyboard-response",
+    stimulus: "<p>Ready？</p>" 
+                  };
   
  var fy = {
       type: "html-keyboard-response",
@@ -152,10 +157,10 @@ var welcome = {
 
 
   var purosdure={
-    timeline:[fy, br, face, table, test],
+    timeline:[ready, fy, br, face, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 6,
+    repetitions: 18,
 }
 
 timeline.push(purosdure);
