@@ -5,8 +5,8 @@ var timeline = [];
 
 var preload = {
       type: 'preload',
-      images: [repo_site + 'M1_1_image_chair_chair/left.png',
-      repo_site + 'M1_1_image_chair_chair/right.png',
+      images: [repo_site + 'M1_1_image_chair/left.png',
+      repo_site + 'M1_1_image_chair/right.png',
       
   repo_site + 'M1_1_image_chair/left_0.png',
   repo_site + 'M1_1_image_chair/left_45.png',
