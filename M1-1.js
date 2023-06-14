@@ -65,41 +65,41 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_0.png',  correct_response: 'j', sitmu: 'left_0'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_45.png',  correct_response: 'j', sitmu: 'left_45'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_90.png',  correct_response: 'j', sitmu: 'left_90'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_135.png',  correct_response: 'j', sitmu: 'left_135'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_180.png',  correct_response: 'j', sitmu: 'left_180'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_225.png',  correct_response: 'j', sitmu: 'left_225'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_270.png',  correct_response: 'j', sitmu: 'left_270'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_315.png',  correct_response: 'j', sitmu: 'left_315'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_0.png',  correct_response: 'j', stimu: 'left_0'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_45.png',  correct_response: 'j', stimu: 'left_45'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_90.png',  correct_response: 'j', stimu: 'left_90'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_135.png',  correct_response: 'j', stimu: 'left_135'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_180.png',  correct_response: 'j', stimu: 'left_180'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_225.png',  correct_response: 'j', stimu: 'left_225'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_270.png',  correct_response: 'j', stimu: 'left_270'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_315.png',  correct_response: 'j', stimu: 'left_315'},
 
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_0.png',  correct_response: 'f', sitmu: 're_left_0'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_45.png',  correct_response: 'f', sitmu: 're_left_45'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_90.png',  correct_response: 'f', sitmu: 're_left_90'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_135.png',  correct_response: 'f', sitmu: 're_left_135'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_180.png',  correct_response: 'f', sitmu: 're_left_180'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_225.png',  correct_response: 'f', sitmu: 're_left_225'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_270.png',  correct_response: 'f', sitmu: 're_left_270'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_315.png',  correct_response: 'f', sitmu: 're_left_315'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_0.png',  correct_response: 'f', stimu: 're_left_0'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_45.png',  correct_response: 'f', stimu: 're_left_45'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_90.png',  correct_response: 'f', stimu: 're_left_90'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_135.png',  correct_response: 'f', stimu: 're_left_135'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_180.png',  correct_response: 'f', stimu: 're_left_180'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_225.png',  correct_response: 'f', stimu: 're_left_225'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_270.png',  correct_response: 'f', stimu: 're_left_270'},
+    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_315.png',  correct_response: 'f', stimu: 're_left_315'},
 
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_0.png',  correct_response: 'j', sitmu: 'right_0'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_45.png',  correct_response: 'j', sitmu: 'right_45'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_90.png',  correct_response: 'j', sitmu: 'right_90'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_135.png',  correct_response: 'j', sitmu: 'right_135'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_180.png',  correct_response: 'j', sitmu: 'right_180'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_225.png',  correct_response: 'j', sitmu: 'right_225'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_270.png',  correct_response: 'j', sitmu: 'right_270'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_315.png',  correct_response: 'j', sitmu: 'right_315'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_0.png',  correct_response: 'j', stimu: 'right_0'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_45.png',  correct_response: 'j', stimu: 'right_45'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_90.png',  correct_response: 'j', stimu: 'right_90'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_135.png',  correct_response: 'j', stimu: 'right_135'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_180.png',  correct_response: 'j', stimu: 'right_180'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_225.png',  correct_response: 'j', stimu: 'right_225'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_270.png',  correct_response: 'j', stimu: 'right_270'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_315.png',  correct_response: 'j', stimu: 'right_315'},
 
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_0.png',  correct_response: 'f', sitmu: 're_right_0'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_45.png',  correct_response: 'f', sitmu: 're_right_45'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_90.png',  correct_response: 'f', sitmu: 're_right_90'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_135.png',  correct_response: 'f', sitmu: 're_right_135'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_180.png',  correct_response: 'f', sitmu: 're_right_180'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_225.png',  correct_response: 'f', sitmu: 're_right_225'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_270.png',  correct_response: 'f', sitmu: 're_right_270'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_315.png',  correct_response: 'f', sitmu: 're_right_315'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_0.png',  correct_response: 'f', stimu: 're_right_0'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_45.png',  correct_response: 'f', stimu: 're_right_45'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_90.png',  correct_response: 'f', stimu: 're_right_90'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_135.png',  correct_response: 'f', stimu: 're_right_135'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_180.png',  correct_response: 'f', stimu: 're_right_180'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_225.png',  correct_response: 'f', stimu: 're_right_225'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_270.png',  correct_response: 'f', stimu: 're_right_270'},
+    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_315.png',  correct_response: 'f', stimu: 're_right_315'},
   ]
 
 
@@ -150,7 +150,7 @@ var welcome = {
   
   on_finish: function(data){
     data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response); 
-    data.kaku = jsPsych.timelineVariable('sitmu');
+    data.stimu = jsPsych.timelineVariable('stimu');
   }
 };
         
