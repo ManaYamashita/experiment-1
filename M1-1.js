@@ -4,12 +4,12 @@ var repo_site = "https://manayamashita.github.io/experiment-1/";
 var timeline = [];
 
 var preload = {
-      type: 'preload',
-      images: [repo_site + 'M1_1_image/face_left.png',
-      repo_site + 'M1_1_image/face_right.png',
+  type: 'preload',
+  images: [repo_site + 'M1_1_image/face_left.png',
+  repo_site + 'M1_1_image/face_right.png',
 
-      repo_site + 'M1_1_image/Table_left.png',
-      repo_site + 'M1_1_image/Table_right.png',
+  repo_site + 'M1_1_image/Table_left.png',
+  repo_site + 'M1_1_image/Table_right.png',
       
   repo_site + 'M1_1_image/left_0.png',
   repo_site + 'M1_1_image/left_45.png',
@@ -160,7 +160,7 @@ var welcome = {
     timeline:[ready, fy, br, face, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 1,
+    repetitions: 18,
 }
 
 timeline.push(purosdure);
