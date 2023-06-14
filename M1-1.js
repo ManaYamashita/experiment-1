@@ -160,7 +160,7 @@ var welcome = {
     timeline:[ready, fy, br, face, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 1,
+    repetitions: 2,
 }
 
 timeline.push(purosdure);
