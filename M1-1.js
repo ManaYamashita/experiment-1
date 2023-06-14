@@ -150,7 +150,7 @@ var welcome = {
   
   on_finish: function(data){
     data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response); 
-    data.kaku = jsPsych.timelineVariable('stimu');
+    data.kaku = jsPsych.timelineVariable('sitmu');
   }
 };
         
@@ -160,7 +160,7 @@ var welcome = {
     timeline:[ready, fy, br, face, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    repetitions: 18,
+    repetitions: 1,
 }
 
 timeline.push(purosdure);
