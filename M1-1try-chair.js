@@ -115,7 +115,7 @@ var welcome = {
       trial_duration: 300,
                     };
 
- v  var table = {
+   var table = {
       type:"image-keyboard-response",
        stimulus: jsPsych.timelineVariable('table'),
        choices: 'NO_KEYS',
