@@ -7,7 +7,7 @@ var preload = {
   type: 'preload',
   images: [
   repo_site + 'M1_1_image/table_left_human.png',
-  repo_site + 'M1_1_image/table_right_chair_human.png',
+  repo_site + 'M1_1_image/table_right_chair.png',
       
   repo_site + 'M1_1_image/left_human0.png',
   repo_site + 'M1_1_image/left_human45.png',
