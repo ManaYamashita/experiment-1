@@ -6,6 +6,7 @@ var timeline = [];
 var preload = {
   type: 'preload',
   images: [
+  repo_site + "M1_1_image/koshiten.png" ,
   repo_site + 'M1_1_image/table_left_human.png',
   repo_site + 'M1_1_image/table_right_human.png',
       
@@ -106,12 +107,12 @@ var welcome = {
     stimulus: "<p>Ready？</p>" 
                   };
   
- var fy = {
-      type: "html-keyboard-response",
-      stimulus: "<p>+</p>", 
+  var fy = {
+      type: "image-keyboard-response",
+      stimulus: 'M1_1_image/koshiten.png', 
       choice: 'NO_KEYS',
       trial_duration: 400,
-                    };
+                                  };
 
   var br = {
       type: "html-keyboard-response",

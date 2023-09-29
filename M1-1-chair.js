@@ -6,6 +6,7 @@ var timeline = [];
 var preload = {
   type: 'preload',
   images: [
+  repo_site + "M1_1_image/koshiten.png" ,
   repo_site + 'M1_1_image/table_left_chair.png',
   repo_site + 'M1_1_image/table_right_chair.png',
       
@@ -63,8 +64,8 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    { table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair0.png',  correct_response: 'j', stimu: 'left_chair0'},
-    { table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair45.png',  correct_response: 'j', stimu: 'left_chair45'},
+    {table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair0.png',  correct_response: 'j', stimu: 'left_chair0'},
+    {table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair45.png',  correct_response: 'j', stimu: 'left_chair45'},
     {table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair90.png',  correct_response: 'j', stimu: 'left_chair90'},
     {table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair135.png',  correct_response: 'j', stimu: 'left_chair135'},
     {table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair180.png',  correct_response: 'j', stimu: 'left_chair180'},
@@ -107,8 +108,8 @@ var welcome = {
                   };
   
  var fy = {
-      type: "html-keyboard-response",
-      stimulus: "<p>+</p>", 
+      type: "image-keyboard-response",
+      stimulus: 'M1_1_image/koshiten.png', 
       choice: 'NO_KEYS',
       trial_duration: 400,
                     };
