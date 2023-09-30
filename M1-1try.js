@@ -5,45 +5,26 @@ var timeline = [];
 
 var preload = {
       type: 'preload',
-      images: [repo_site + 'M1_1_image/face_left.png',
-      repo_site + 'M1_1_image/face_right.png',
-
-      repo_site + 'M1_1_image/Table_left.png',
-      repo_site + 'M1_1_image/Table_right.png',
+      images: [repo_site + 'M1_1_image/try.png',
       
-  repo_site + 'M1_1_image/left_0.png',
-  repo_site + 'M1_1_image/left_45.png',
-  repo_site + 'M1_1_image/left_90.png',
-  repo_site + 'M1_1_image/left_135.png',
-  repo_site + 'M1_1_image/left_180.png',
-  repo_site + 'M1_1_image/left_225.png',
-  repo_site + 'M1_1_image/left_270.png',
-  repo_site + 'M1_1_image/left_315.png',
-  repo_site + 'M1_1_image/re_left_0.png',
-  repo_site + 'M1_1_image/re_left_45.png',
-  repo_site + 'M1_1_image/re_left_90.png',
-  repo_site + 'M1_1_image/re_left_135.png',
-  repo_site + 'M1_1_image/re_left_180.png',
-  repo_site + 'M1_1_image/re_left_225.png',
-  repo_site + 'M1_1_image/re_left_270.png',
-  repo_site + 'M1_1_image/re_left_315.png',
+  repo_site + 'M1_1_image/try0.png',
+  repo_site + 'M1_1_image/try45.png',
+  repo_site + 'M1_1_image/try90.png',
+  repo_site + 'M1_1_image/try135.png',
+  repo_site + 'M1_1_image/try180.png',
+  repo_site + 'M1_1_image/try225.png',
+  repo_site + 'M1_1_image/try270.png',
+  repo_site + 'M1_1_image/try315.png',
 
-   repo_site + 'M1_1_image/right_0.png',
-  repo_site + 'M1_1_image/right_45.png',
-  repo_site + 'M1_1_image/right_90.png',
-  repo_site + 'M1_1_image/right_135.png',
-  repo_site + 'M1_1_image/right_180.png',
-  repo_site + 'M1_1_image/right_225.png',
-  repo_site + 'M1_1_image/right_270.png',
-  repo_site + 'M1_1_image/right_315.png',
-  repo_site + 'M1_1_image/re_right_0.png',
-  repo_site + 'M1_1_image/re_right_45.png',
-  repo_site + 'M1_1_image/re_right_90.png',
-  repo_site + 'M1_1_image/re_right_135.png',
-  repo_site + 'M1_1_image/re_right_180.png',
-  repo_site + 'M1_1_image/re_right_225.png',
-  repo_site + 'M1_1_image/re_right_270.png',
-  repo_site + 'M1_1_image/re_right_315.png',
+  repo_site + 'M1_1_image/re_try0.png',
+  repo_site + 'M1_1_image/re_try45.png',
+  repo_site + 'M1_1_image/re_try90.png',
+  repo_site + 'M1_1_image/re_try135.png',
+  repo_site + 'M1_1_image/re_try180.png',
+  repo_site + 'M1_1_image/re_try225.png',
+  repo_site + 'M1_1_image/re_try270.png',
+  repo_site + 'M1_1_image/re_try315.png',
+ 
   ]
     }
     timeline.push(preload);
@@ -65,48 +46,28 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_0.png',  correct_response: 'j', sitmu: 'left_0'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_45.png',  correct_response: 'j', sitmu: 'left_45'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_90.png',  correct_response: 'j', sitmu: 'left_90'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_135.png',  correct_response: 'j', sitmu: 'left_135'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_180.png',  correct_response: 'j', sitmu: 'left_180'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_225.png',  correct_response: 'j', sitmu: 'left_225'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_270.png',  correct_response: 'j', sitmu: 'left_270'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/left_315.png',  correct_response: 'j', sitmu: 'left_315'},
-
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_0.png',  correct_response: 'f', sitmu: 're_left_0'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_45.png',  correct_response: 'f', sitmu: 're_left_45'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_90.png',  correct_response: 'f', sitmu: 're_left_90'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_135.png',  correct_response: 'f', sitmu: 're_left_135'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_180.png',  correct_response: 'f', sitmu: 're_left_180'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_225.png',  correct_response: 'f', sitmu: 're_left_225'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_270.png',  correct_response: 'f', sitmu: 're_left_270'},
-    {face:repo_site + 'M1_1_image/face_left.png', table : repo_site + 'M1_1_image/Table_left.png', target : repo_site + 'M1_1_image/re_left_315.png',  correct_response: 'f', sitmu: 're_left_315'},
-
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_0.png',  correct_response: 'j', sitmu: 'right_0'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_45.png',  correct_response: 'j', sitmu: 'right_45'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_90.png',  correct_response: 'j', sitmu: 'right_90'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_135.png',  correct_response: 'j', sitmu: 'right_135'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_180.png',  correct_response: 'j', sitmu: 'right_180'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_225.png',  correct_response: 'j', sitmu: 'right_225'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_270.png',  correct_response: 'j', sitmu: 'right_270'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/right_315.png',  correct_response: 'j', sitmu: 'right_315'},
-
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_0.png',  correct_response: 'f', sitmu: 're_right_0'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_45.png',  correct_response: 'f', sitmu: 're_right_45'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_90.png',  correct_response: 'f', sitmu: 're_right_90'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_135.png',  correct_response: 'f', sitmu: 're_right_135'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_180.png',  correct_response: 'f', sitmu: 're_right_180'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_225.png',  correct_response: 'f', sitmu: 're_right_225'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_270.png',  correct_response: 'f', sitmu: 're_right_270'},
-    {face:repo_site + 'M1_1_image/face_right.png', table : repo_site + 'M1_1_image/Table_right.png', target : repo_site + 'M1_1_image/re_right_315.png',  correct_response: 'f', sitmu: 're_right_315'},
-  ]
+    {koshiten:repo_site + "M1_1_image/koshiten.png" , table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try45.png',  correct_response: 'j', stimu: 'try45'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try90.png',  correct_response: 'j', stimu: 'try90'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try135.png',  correct_response: 'j', stimu: 'try135'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try180.png',  correct_response: 'j', stimu: 'try180'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try225.png',  correct_response: 'j', stimu: 'try225'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try270.png',  correct_response: 'j', stimu: 'try270'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/try315.png',  correct_response: 'j', stimu: 'try315'},
+  
+  
+    {koshiten:repo_site + "M1_1_image/koshiten.png" , table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try45.png',  correct_response: 'f', stimu: 'try45'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try90.png',  correct_response: 'f', stimu: 'try90'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try135.png',  correct_response: 'f', stimu: 'try135'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try180.png',  correct_response: 'f', stimu: 'try180'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try225.png',  correct_response: 'f', stimu: 'try225'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try270.png',  correct_response: 'f', stimu: 'try270'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try315.png',  correct_response: 'f', stimu: 'try315'},]
 
   var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 5);
   
  var fy = {
-      type: "html-keyboard-response",
-      stimulus: "<p>+</p>", 
+      type: "image-keyboard-response",
+      stimulus:  jsPsych.timelineVariable('koshiten'), 
       choice: 'NO_KEYS',
       trial_duration: 400,
                     };
@@ -118,12 +79,6 @@ var welcome = {
       trial_duration: 300,
                     };
 
- var face = {
-      type:"image-keyboard-response",
-       stimulus: jsPsych.timelineVariable('face'),
-       choices: 'NO_KEYS',
-       trial_duration: 800,
-        };
 
   var table = {
       type:"image-keyboard-response",
@@ -175,7 +130,7 @@ const choi = "不正解";
 
 
   var purosdure={
-    timeline:[fy, br, face, table, test, debrief_block],
+    timeline:[fy, br, table, test, debrief_block],
     timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
