@@ -63,7 +63,7 @@ var welcome = {
     {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try270.png',  correct_response: 'f', stimu: 'try270'},
     {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_try.png', target : repo_site + 'M1_1_image/re_try315.png',  correct_response: 'f', stimu: 'try315'},]
 
-  var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 5);
+  var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 15);
   
  var fy = {
       type: "image-keyboard-response",
