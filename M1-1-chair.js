@@ -126,7 +126,7 @@ var welcome = {
 
   var face = {
         type:"image-keyboard-response",
-        stimulus: jsPsych.timelineVariable('face'),
+        stimulus: jsPsych.timelineVariable('target'),
         choices: 'NO_KEYS',
         trial_duration: 800,
                     };
