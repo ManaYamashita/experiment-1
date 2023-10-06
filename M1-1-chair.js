@@ -9,7 +9,10 @@ var preload = {
   repo_site + "M1_1_image/koshiten.png" ,
   repo_site + 'M1_1_image/table_left_chair.png',
   repo_site + 'M1_1_image/table_right_chair.png',
-      
+
+  repo_site + 'M1_1_image/left_chair_face.png',
+  repo_site + 'M1_1_image/right_chair_face.png',
+        
   repo_site + 'M1_1_image/left_chair0.png',
   repo_site + 'M1_1_image/left_chair45.png',
   repo_site + 'M1_1_image/left_chair90.png',
@@ -64,41 +67,41 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair0.png',  correct_response: 'j', stimu: 'left_chair0'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair45.png',  correct_response: 'j', stimu: 'left_chair45'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair90.png',  correct_response: 'j', stimu: 'left_chair90'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair135.png',  correct_response: 'j', stimu: 'left_chair135'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair180.png',  correct_response: 'j', stimu: 'left_chair180'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair225.png',  correct_response: 'j', stimu: 'left_chair225'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair270.png',  correct_response: 'j', stimu: 'left_chair270'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair315.png',  correct_response: 'j', stimu: 'left_chair315'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair0.png',  correct_response: 'j', stimu: 'left_chair0'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair45.png',  correct_response: 'j', stimu: 'left_chair45'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair90.png',  correct_response: 'j', stimu: 'left_chair90'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair135.png',  correct_response: 'j', stimu: 'left_chair135'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair180.png',  correct_response: 'j', stimu: 'left_chair180'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair225.png',  correct_response: 'j', stimu: 'left_chair225'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair270.png',  correct_response: 'j', stimu: 'left_chair270'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/left_chair315.png',  correct_response: 'j', stimu: 'left_chair315'},
 
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair0.png',  correct_response: 'f', stimu: 're_left_chair0'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair45.png',  correct_response: 'f', stimu: 're_left_chair45'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair90.png',  correct_response: 'f', stimu: 're_left_chair90'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair135.png',  correct_response: 'f', stimu: 're_left_chair135'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair180.png',  correct_response: 'f', stimu: 're_left_chair180'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair225.png',  correct_response: 'f', stimu: 're_left_chair225'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair270.png',  correct_response: 'f', stimu: 're_left_chair270'},
-    {koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair315.png',  correct_response: 'f', stimu: 're_left_chair315'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair0.png',  correct_response: 'f', stimu: 're_left_chair0'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair45.png',  correct_response: 'f', stimu: 're_left_chair45'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair90.png',  correct_response: 'f', stimu: 're_left_chair90'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair135.png',  correct_response: 'f', stimu: 're_left_chair135'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair180.png',  correct_response: 'f', stimu: 're_left_chair180'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair225.png',  correct_response: 'f', stimu: 're_left_chair225'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair270.png',  correct_response: 'f', stimu: 're_left_chair270'},
+    {koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/left_chair_face" ,table : repo_site + 'M1_1_image/table_left_chair.png', target : repo_site + 'M1_1_image/re_left_chair315.png',  correct_response: 'f', stimu: 're_left_chair315'},
 
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair0.png',  correct_response: 'j', stimu: 'right_chair0'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair45.png',  correct_response: 'j', stimu: 'right_chair45'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair90.png',  correct_response: 'j', stimu: 'right_chair90'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair135.png',  correct_response: 'j', stimu: 'right_chair135'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair180.png',  correct_response: 'j', stimu: 'right_chair180'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair225.png',  correct_response: 'j', stimu: 'right_chair225'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair270.png',  correct_response: 'j', stimu: 'right_chair270'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair315.png',  correct_response: 'j', stimu: 'right_chair315'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair0.png',  correct_response: 'j', stimu: 'right_chair0'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair45.png',  correct_response: 'j', stimu: 'right_chair45'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair90.png',  correct_response: 'j', stimu: 'right_chair90'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair135.png',  correct_response: 'j', stimu: 'right_chair135'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair180.png',  correct_response: 'j', stimu: 'right_chair180'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair225.png',  correct_response: 'j', stimu: 'right_chair225'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair270.png',  correct_response: 'j', stimu: 'right_chair270'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/right_chair315.png',  correct_response: 'j', stimu: 'right_chair315'},
 
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair0.png',  correct_response: 'f', stimu: 're_right_chair0'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair45.png',  correct_response: 'f', stimu: 're_right_chair45'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair90.png',  correct_response: 'f', stimu: 're_right_chair90'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair135.png',  correct_response: 'f', stimu: 're_right_chair135'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair180.png',  correct_response: 'f', stimu: 're_right_chair180'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair225.png',  correct_response: 'f', stimu: 're_right_chair225'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair270.png',  correct_response: 'f', stimu: 're_right_chair270'},
-    { koshiten:repo_site + "M1_1_image/koshiten.png" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair315.png',  correct_response: 'f', stimu: 're_right_chair315'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair0.png',  correct_response: 'f', stimu: 're_right_chair0'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair45.png',  correct_response: 'f', stimu: 're_right_chair45'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair90.png',  correct_response: 'f', stimu: 're_right_chair90'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair135.png',  correct_response: 'f', stimu: 're_right_chair135'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair180.png',  correct_response: 'f', stimu: 're_right_chair180'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair225.png',  correct_response: 'f', stimu: 're_right_chair225'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair270.png',  correct_response: 'f', stimu: 're_right_chair270'},
+    { koshiten:repo_site + "M1_1_image/koshiten.png" ,face: "M1_1_image/right_chair_face" ,table : repo_site + 'M1_1_image/table_right_chair.png', target : repo_site + 'M1_1_image/re_right_chair315.png',  correct_response: 'f', stimu: 're_right_chair315'},
   ]
 
 
@@ -119,6 +122,13 @@ var welcome = {
       stimulus: "<p></p>", 
       choice: 'NO_KEYS',
       trial_duration: 300,
+                    };
+
+  var face = {
+        type:"image-keyboard-response",
+        stimulus: jsPsych.timelineVariable('face'),
+        choices: 'NO_KEYS',
+        trial_duration: 800,
                     };
 
   var table = {
@@ -149,7 +159,7 @@ var welcome = {
 
 
   var purosdure={
-    timeline:[fy, br, table, test],
+    timeline:[fy, br, face, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 2,

@@ -7,6 +7,8 @@ var preload = {
       type: 'preload',
       images: [repo_site + 'M1_1_image/table_try.png',
       
+     
+
   repo_site + 'M1_1_image/try0.png',
   repo_site + 'M1_1_image/try45.png',
   repo_site + 'M1_1_image/try90.png',
@@ -78,6 +80,13 @@ var welcome = {
       choice: 'NO_KEYS',
       trial_duration: 300,
                     };
+
+  var table = {
+       type:"image-keyboard-response",
+       stimulus: jsPsych.timelineVariable('face'),
+       choices: 'NO_KEYS',
+       trial_duration: 800,
+                     };
 
 
   var table = {
