@@ -6,6 +6,7 @@ var timeline = [];
 var preload = {
       type: 'preload',
       images: [repo_site + 'M1_2_image/table_try.png',
+      repo_site + "M1_2_image/kuro.png",
       
      
 
@@ -48,22 +49,22 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {koshiten:repo_site + "M1_2_image/koshiten.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try45.png',  correct_response: 'j', stimu: 'try45'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try90.png',  correct_response: 'j', stimu: 'try90'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try135.png',  correct_response: 'j', stimu: 'try135'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try180.png',  correct_response: 'j', stimu: 'try180'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try225.png',  correct_response: 'j', stimu: 'try225'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try270.png',  correct_response: 'j', stimu: 'try270'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try315.png',  correct_response: 'j', stimu: 'try315'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try45.png',  correct_response: 'j', stimu: 'try45'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try90.png',  correct_response: 'j', stimu: 'try90'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try135.png',  correct_response: 'j', stimu: 'try135'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try180.png',  correct_response: 'j', stimu: 'try180'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try225.png',  correct_response: 'j', stimu: 'try225'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try270.png',  correct_response: 'j', stimu: 'try270'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/try315.png',  correct_response: 'j', stimu: 'try315'},
   
   
-    {koshiten:repo_site + "M1_2_image/koshiten.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try45.png',  correct_response: 'f', stimu: 'try45'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try90.png',  correct_response: 'f', stimu: 'try90'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try135.png',  correct_response: 'f', stimu: 'try135'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try180.png',  correct_response: 'f', stimu: 'try180'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try225.png',  correct_response: 'f', stimu: 'try225'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try270.png',  correct_response: 'f', stimu: 'try270'},
-    {koshiten:repo_site + "M1_2_image/koshiten.png" ,table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try315.png',  correct_response: 'f', stimu: 'try315'},]
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" ,  table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try45.png',  correct_response: 'f', stimu: 'try45'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try90.png',  correct_response: 'f', stimu: 'try90'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try135.png',  correct_response: 'f', stimu: 'try135'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try180.png',  correct_response: 'f', stimu: 'try180'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try225.png',  correct_response: 'f', stimu: 'try225'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try270.png',  correct_response: 'f', stimu: 'try270'},
+    {koshiten:repo_site + "M1_2_image/koshiten.png" ,kuro:repo_site + "M1_2_image/kuro.png" , table : repo_site + 'M1_2_image/table_try.png', target : repo_site + 'M1_2_image/re_try315.png',  correct_response: 'f', stimu: 'try315'},]
 
   var test_rand = jsPsych.randomization.sampleWithReplacement(test_stimuli, 15);
   
@@ -74,12 +75,12 @@ var welcome = {
       trial_duration: 400,
                     };
 
-  var br = {
-      type: "html-keyboard-response",
-      stimulus: "<p></p>", 
-      choice: 'NO_KEYS',
-      trial_duration: 300,
-                    };
+ var fy = {
+       type: "image-keyboard-response",
+       stimulus:  jsPsych.timelineVariable('kuro'), 
+       choice: 'NO_KEYS',
+       trial_duration: 300,
+                      };
 
   var table = {
        type:"image-keyboard-response",
