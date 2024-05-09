@@ -75,7 +75,7 @@ var welcome = {
       trial_duration: 400,
                     };
 
- var fy = {
+ var kuro = {
        type: "image-keyboard-response",
        stimulus:  jsPsych.timelineVariable('kuro'), 
        choice: 'NO_KEYS',
@@ -140,7 +140,7 @@ const choi = "不正解";
 
 
   var purosdure={
-    timeline:[fy, br, table, test, debrief_block],
+    timeline:[fy, kuro, table, test, debrief_block],
     timeline_variables: test_rand,
     randomize_order: true,
     repetitions: 1,
