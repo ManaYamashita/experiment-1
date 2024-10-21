@@ -74,7 +74,7 @@ var welcome = {
 
   var br = {
      type: "image-keyboard-response",
-      stimulus:"3try/koshiten1.png", 
+      stimulus:'3try/koshiten1.png', 
       choice: 'NO_KEYS',
       trial_duration: function(){
         return jsPsych.randomization.sampleWithoutReplacement([Math.floor( Math.random() * 1000 ) + 1500], 1)[0];//Math.random() * ( 最大値 - 最小値 ) + 最小値
