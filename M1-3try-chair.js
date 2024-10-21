@@ -56,13 +56,6 @@ var welcome = {
     {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right270.png',  correct_response: 'j', stimu: 'right270'},
     {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right315.png',  correct_response: 'j', stimu: 'right315'},
   ]
-
-
-  var ready = {
-    type: "html-keyboard-response",
-    stimulus: "<p>何かキーを押すと実験が始まります</p>" 
-                  };
-  
                   
  var fy = {
       type: "image-keyboard-response",
@@ -119,7 +112,7 @@ var debrief_block = {
 
 
   var purosdure={
-    timeline:[fy, table, test],
+    timeline:[fy, test, debrief_block],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 1,

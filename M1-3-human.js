@@ -58,11 +58,7 @@ var welcome = {
   ]
 
 
-  var ready = {
-    type: "html-keyboard-response",
-    stimulus: "<p>何かキーを押すと実験が始まります</p>" 
-                  };
-  
+
                   
  var fy = {
       type: "image-keyboard-response",
@@ -93,7 +89,7 @@ var welcome = {
 
 
   var purosdure={
-    timeline:[fy, table, test],
+    timeline:[fy, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 6,
