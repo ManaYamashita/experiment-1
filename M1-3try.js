@@ -126,7 +126,7 @@ var debrief_block = {
 
 
   var purosdure={
-    timeline:[fy, test, debrief_block],
+    timeline:[fy,br, test, debrief_block],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 1,
