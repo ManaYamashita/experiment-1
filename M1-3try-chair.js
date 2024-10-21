@@ -6,21 +6,21 @@ var timeline = [];
 var preload = {
   type: 'preload',
   images: [
-  repo_site + "3human/koshiten.png" ,
+  repo_site + "3try/koshiten.png" ,
 
-  repo_site + '3human/left45.png',
-  repo_site + '3human/left90.png',
-  repo_site + '3human/left135.png',
-  repo_site + '3human/left225.png',
-  repo_site + '3human/left270.png',
-  repo_site + '3human/left315.png',
+  repo_site + '3try/left45.png',
+  repo_site + '3try/left90.png',
+  repo_site + '3try/left135.png',
+  repo_site + '3try/left225.png',
+  repo_site + '3try/left270.png',
+  repo_site + '3try/left315.png',
 
-  repo_site + '3human/right45.png',
-  repo_site + '3human/right90.png',
-  repo_site + '3human/right135.png',
-  repo_site + '3human/right225.png',
-  repo_site + '3human/right270.png',
-  repo_site + '3human/right315.png',
+  repo_site + '3try/right45.png',
+  repo_site + '3try/right90.png',
+  repo_site + '3try/right135.png',
+  repo_site + '3try/right225.png',
+  repo_site + '3try/right270.png',
+  repo_site + '3try/right315.png',
    ]
     }
     timeline.push(preload);
@@ -42,19 +42,19 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left45.png',  correct_response: 'f', stimu: 'left45'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left90.png',  correct_response: 'f', stimu: 'left90'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left135.png',  correct_response: 'f', stimu: 'left135'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left225.png',  correct_response: 'f', stimu: 'left225'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left270.png',  correct_response: 'f', stimu: 'left270'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left315.png',  correct_response: 'f', stimu: 'left315'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left45.png',  correct_response: 'f', stimu: 'left45'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left90.png',  correct_response: 'f', stimu: 'left90'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left135.png',  correct_response: 'f', stimu: 'left135'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left225.png',  correct_response: 'f', stimu: 'left225'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left270.png',  correct_response: 'f', stimu: 'left270'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/left315.png',  correct_response: 'f', stimu: 'left315'},
 
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right45.png',  correct_response: 'j', stimu: 'right45'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right90.png',  correct_response: 'j', stimu: 'right90'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right135.png',  correct_response: 'j', stimu: 'right135'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right225.png',  correct_response: 'j', stimu: 'right225'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right270.png',  correct_response: 'j', stimu: 'right270'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right315.png',  correct_response: 'j', stimu: 'right315'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right45.png',  correct_response: 'j', stimu: 'right45'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right90.png',  correct_response: 'j', stimu: 'right90'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right135.png',  correct_response: 'j', stimu: 'right135'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right225.png',  correct_response: 'j', stimu: 'right225'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right270.png',  correct_response: 'j', stimu: 'right270'},
+    {koshiten:repo_site + "3try/koshiten.png" , target : repo_site + '3try/right315.png',  correct_response: 'j', stimu: 'right315'},
   ]
                   
  var fy = {
