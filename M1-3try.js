@@ -7,7 +7,7 @@ var preload = {
   type: 'preload',
   images: [
   repo_site + "3try/koshiten.png" ,
-  repo_site + "3try/koshiten1.png" ,
+  repo_site + "3try/zyuuzi.png" ,
 
   repo_site + '3try/left45.png',
   repo_site + '3try/left90.png',
@@ -74,7 +74,7 @@ var welcome = {
 
   var br = {
      type: "image-keyboard-response",
-      stimulus:'3try/koshiten1.png', 
+      stimulus:'3try/zyuuzi.png', 
       choice: 'NO_KEYS',
       trial_duration: function(){
         return jsPsych.randomization.sampleWithoutReplacement([Math.floor( Math.random() * 1000 ) + 1500], 1)[0];//Math.random() * ( 最大値 - 最小値 ) + 最小値
