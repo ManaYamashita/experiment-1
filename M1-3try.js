@@ -68,10 +68,17 @@ var welcome = {
       type: "image-keyboard-response",
       stimulus: jsPsych.timelineVariable('koshiten'), 
       choice: 'NO_KEYS',
+      trial_duration: 1000
+                    };
+
+  var br = {
+     type: "html-keyboard-response",
+      stimulus: "<p> </p>", 
+      choice: 'NO_KEYS',
       trial_duration: function(){
         return jsPsych.randomization.sampleWithoutReplacement([Math.floor( Math.random() * 1000 ) + 1500], 1)[0];//Math.random() * ( 最大値 - 最小値 ) + 最小値
       },
-                    };
+                    };                  
 
 
   var test = {
