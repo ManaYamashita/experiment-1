@@ -6,21 +6,21 @@ var timeline = [];
 var preload = {
   type: 'preload',
   images: [
-  repo_site + "3human/koshiten.png" ,
+  repo_site + "3chair/koshiten.png" ,
 
-  repo_site + '3human/left45.png',
-  repo_site + '3human/left90.png',
-  repo_site + '3human/left135.png',
-  repo_site + '3human/left225.png',
-  repo_site + '3human/left270.png',
-  repo_site + '3human/left315.png',
+  repo_site + '3chair/left45.png',
+  repo_site + '3chair/left90.png',
+  repo_site + '3chair/left135.png',
+  repo_site + '3chair/left225.png',
+  repo_site + '3chair/left270.png',
+  repo_site + '3chair/left315.png',
 
-  repo_site + '3human/right45.png',
-  repo_site + '3human/right90.png',
-  repo_site + '3human/right135.png',
-  repo_site + '3human/right225.png',
-  repo_site + '3human/right270.png',
-  repo_site + '3human/right315.png',
+  repo_site + '3chair/right45.png',
+  repo_site + '3chair/right90.png',
+  repo_site + '3chair/right135.png',
+  repo_site + '3chair/right225.png',
+  repo_site + '3chair/right270.png',
+  repo_site + '3chair/right315.png',
    ]
     }
     timeline.push(preload);
@@ -42,19 +42,19 @@ var welcome = {
   timeline.push(welcome);
 
   var test_stimuli = [
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left45.png',  correct_response: 'f', stimu: 'left45'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left90.png',  correct_response: 'f', stimu: 'left90'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left135.png',  correct_response: 'f', stimu: 'left135'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left225.png',  correct_response: 'f', stimu: 'left225'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left270.png',  correct_response: 'f', stimu: 'left270'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/left315.png',  correct_response: 'f', stimu: 'left315'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left45.png',  correct_response: 'f', stimu: 'left45'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left90.png',  correct_response: 'f', stimu: 'left90'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left135.png',  correct_response: 'f', stimu: 'left135'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left225.png',  correct_response: 'f', stimu: 'left225'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left270.png',  correct_response: 'f', stimu: 'left270'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/left315.png',  correct_response: 'f', stimu: 'left315'},
 
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right45.png',  correct_response: 'j', stimu: 'right45'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right90.png',  correct_response: 'j', stimu: 'right90'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right135.png',  correct_response: 'j', stimu: 'right135'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right225.png',  correct_response: 'j', stimu: 'right225'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right270.png',  correct_response: 'j', stimu: 'right270'},
-    {koshiten:repo_site + "3human/koshiten.png" , target : repo_site + '3human/right315.png',  correct_response: 'j', stimu: 'right315'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right45.png',  correct_response: 'j', stimu: 'right45'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right90.png',  correct_response: 'j', stimu: 'right90'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right135.png',  correct_response: 'j', stimu: 'right135'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right225.png',  correct_response: 'j', stimu: 'right225'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right270.png',  correct_response: 'j', stimu: 'right270'},
+    {koshiten:repo_site + "3chair/koshiten.png" , target : repo_site + '3chair/right315.png',  correct_response: 'j', stimu: 'right315'},
   ]
 
 
@@ -64,14 +64,21 @@ var welcome = {
                   };
   
                   
- var fy = {
+  var fy = {
       type: "image-keyboard-response",
       stimulus: jsPsych.timelineVariable('koshiten'), 
+      choice: 'NO_KEYS',
+      trial_duration: 1000
+                    };
+
+  var br = {
+     type: "html-keyboard-response",
+      stimulus: "<p> </p>", 
       choice: 'NO_KEYS',
       trial_duration: function(){
         return jsPsych.randomization.sampleWithoutReplacement([Math.floor( Math.random() * 1000 ) + 1500], 1)[0];//Math.random() * ( 最大値 - 最小値 ) + 最小値
       },
-                    };
+                    };  
 
 
   var test = {
@@ -93,7 +100,7 @@ var welcome = {
 
 
   var purosdure={
-    timeline:[fy, test],
+    timeline:[fy, br, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 6,
