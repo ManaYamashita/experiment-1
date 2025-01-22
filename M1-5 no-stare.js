@@ -154,7 +154,7 @@ var welcome = {
 
 
   var purosdure={
-    timeline:[fy, kuro, face, table, test],
+    timeline:[fy, kuro, table, test],
     timeline_variables: test_stimuli,
     randomize_order: true,
     repetitions: 2,
